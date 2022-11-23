@@ -1,0 +1,21 @@
+{
+  "name": "lemur",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel --open --port=8080",
+    "dev": "rimraf dist && parcel build --no-optimize",
+    "build": "rimraf dist && parcel build --no-source-maps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
+    "parcel": "^2.8.0",
+    "rimraf": "^3.0.2"
+  }
+}
