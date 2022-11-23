@@ -1,0 +1,39 @@
+.offline {
+  margin-top: 150px;
+
+  &__wrapper {
+    padding-bottom: 122px;
+    background: linear-gradient(180deg, #ffffff 0%, #b8dbff 100%);
+    border-radius: 0 0 0 200px;
+    @include media(990px) {
+      border-radius: 0px 0px 0px 100px;
+      padding-bottom: 150px;
+    }
+    @include media(580px) {
+      border-radius: 0px 0px 0px 50px;
+      padding-bottom: 100px;
+    }
+  }
+  &__features {
+    margin: 110px 0 100px;
+    display: flex;
+  }
+
+  &__button {
+    display: inline-block;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-left: 15px;
+      @include media(990px) {
+        width: 29px;
+        height: 30px;
+      }
+      @include media(580px) {
+        display: none;
+      }
+    }
+  }
+}

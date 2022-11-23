@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  max-width: 1160px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 40px;
   position: relative;
@@ -28,5 +28,16 @@ body {
   }
 }
 
-@import './modules/header.scss';
+.section-title {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #000000;
+}
+
 @import './modules/buttons.scss';
+@import './modules/header.scss';
+@import './modules/offline.scss';
+@import './modules/features.scss';
