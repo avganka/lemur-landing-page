@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -9,7 +9,64 @@
 </head>
 
 <body>
-  <h1>Initial</h1>
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="container">
+        <div class="header__decor"></div>
+        <div class="header__top">
+          <a href="#">
+            <img class="header__logo" src="./img/logo.png" alt="Лемур">
+          </a>
+          <div class="header__right">
+            <button type="button" class="button">Контакты</button>
+            <div class="header__lang">
+              <a href="#" class="button button--circle">UA</a>
+              <a href="#" class="button button--circle">EN</a>
+              <a href="#" class="button button--circle">RU</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <h1 class="header__title">Профессиональное <br>программное <br>обеспечение <br>для проведения
+            <br>социалогических
+            <br>и
+            маркетинговых <br>исследований
+          </h1>
+          <img class="header__img" src="./img/header-img.png" alt="">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <ul class="header__features-list">
+        <li class="header__features-item">
+          <img src="./img/icons/create.svg" alt="">
+          <p class="header__feature-title">Легко создай</p>
+        </li>
+        <li class="header__features-item">
+          <img src="./img/icons/communicate.svg" alt="">
+          <p class="header__feature-title">Легко проведи</p>
+        </li>
+        <li class="header__features-item">
+          <img src="./img/icons/control.svg" alt="">
+          <p class="header__feature-title">Легко контролируй</p>
+        </li>
+      </ul>
+
+      <svg class="header__arrow" width="43" height="63" viewBox="0 0 43 63" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M41.5 41.5L21.5 61.5L1.5 41.5" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M21.5 61.5V1.5" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </div>
+
+
+
+
+  </header>
 
   <script type="module" src="./js/index.js"></script>
 </body>

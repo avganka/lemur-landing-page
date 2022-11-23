@@ -17,3 +17,16 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  @include media(990px) {
+    padding: 0 10px;
+  }
+}
+
+@import './modules/header.scss';
+@import './modules/buttons.scss';

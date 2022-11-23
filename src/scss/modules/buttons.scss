@@ -1,0 +1,64 @@
+.button {
+  display: inline-block;
+  cursor: pointer;
+  background: transparent;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  padding: 7px 18px;
+  line-height: 1;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  transition: all 0.3s linear;
+  &:hover,
+  &:active {
+    color: $blue;
+    background: #ffffff;
+  }
+}
+
+.button--circle {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  &:hover,
+  &:active {
+    color: $blue;
+    background: #ffffff;
+  }
+}
+.button--blue {
+  border-color: $blue;
+  background-color: $blue;
+  &:hover,
+  &:active {
+    color: $blue;
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+}
+.button--darkblue {
+  background-color: $darkblue;
+  background-color: $darkblue;
+  &:hover,
+  &:active {
+    background-color: $orange;
+    border-color: $orange;
+  }
+}
+.button--orange {
+  border-color: $orange;
+  background-color: $orange;
+  &:hover,
+  &:active {
+    color: $blue;
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+}
