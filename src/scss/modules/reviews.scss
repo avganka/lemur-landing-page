@@ -1,15 +1,90 @@
-.reviews {
-  margin-top: 170px;
-  margin-bottom: 150px;
-  &__slider {
-    margin-top: 100px;
+.reviews__button-prev,
+.reviews__button-next {
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  stroke: $orange;
+  @include media(580px) {
+    position: static;
   }
 }
 
-.reviews__slide {
-  padding: 0 100px;
+.reviews__button-prev {
+  left: 0;
 }
 
-.swiper {
-  width: 760px;
+.reviews__button-next {
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.reviews__button-next:hover,
+.reviews__button-prev:hover {
+  stroke: $blue;
+}
+
+.reviews {
+  margin-top: 170px;
+  margin-bottom: 150px;
+  @include media(990px) {
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+  &__inner {
+    max-width: 760px;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  &__wrapper {
+    position: relative;
+    margin-top: 30px;
+    @include media(580px) {
+      order: 1;
+    }
+  }
+  &__img {
+    margin: 0 auto;
+    @include media(580px) {
+      margin: 0;
+      margin-right: auto;
+      width: 67px;
+    }
+  }
+  &__item {
+    padding: 0 100px;
+    @include media(990px) {
+      padding: 0 80px;
+    }
+    @include media(580px) {
+      padding: 0;
+    }
+  }
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  &__text {
+    text-align: left;
+    margin-bottom: 21px;
+    color: #000000;
+    min-height: 84px;
+  }
+
+  &__author {
+    align-self: flex-end;
+    text-align: right;
+    font-weight: 700;
+  }
+
+  &__author-job {
+    color: #8d8d8d;
+    text-align: right;
+  }
 }
