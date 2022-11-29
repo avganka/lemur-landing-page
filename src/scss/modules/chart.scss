@@ -1,0 +1,136 @@
+.chart {
+  position: relative;
+  &__element {
+    position: absolute;
+    min-width: 300px;
+  }
+
+  &__wrapper {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 0px 200px;
+    background-color: $blue;
+    padding: 150px 0 170px;
+
+    @include media(990px) {
+      border-radius: 0px 100px;
+      padding-bottom: 220px;
+    }
+    @include media(580px) {
+      border-radius: 0px 50px;
+    }
+  }
+  &__inner {
+    margin-top: 150px;
+    width: 100%;
+    position: relative;
+
+    @include media(990px) {
+      margin-top: 250px;
+    }
+    @include media(580px) {
+      margin-top: 76px;
+    }
+  }
+  &__image {
+    display: block;
+    max-width: 80%;
+    height: 309px;
+    @include media(990px) {
+      height: 265px;
+      padding-left: 40px;
+    }
+    @include media(580px) {
+      height: auto;
+    }
+  }
+
+  &__line {
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  &__element {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    position: absolute;
+    @include media(990px) {
+      flex-direction: column;
+      row-gap: 15px;
+      align-items: flex-start;
+    }
+  }
+
+  &__element--first {
+    top: 20%;
+    left: 0;
+    @include media(990px) {
+      top: 3%;
+      left: 3%;
+    }
+    @include media(580px) {
+      top: -2%;
+      left: 30%;
+    }
+  }
+  &__element--second {
+    top: 90%;
+    left: 18%;
+    @include media(990px) {
+      top: 90%;
+      left: 21%;
+    }
+    @include media(580px) {
+      top: 23%;
+      left: 30%;
+    }
+  }
+  &__element--third {
+    top: 0%;
+    left: 38%;
+    @include media(990px) {
+      top: -29%;
+      left: 38%;
+    }
+    @include media(580px) {
+      top: 41%;
+      left: 30%;
+    }
+  }
+  &__element--fourth {
+    top: 109%;
+    right: 18%;
+    @include media(990px) {
+      top: 109%;
+      right: -1%;
+    }
+    @include media(580px) {
+      top: 68%;
+      left: 30%;
+    }
+  }
+  &__element--fifth {
+    top: -39%;
+    right: -2%;
+    @include media(990px) {
+      top: -67%;
+      right: -18%;
+    }
+    @include media(580px) {
+      top: 92%;
+      left: 30%;
+    }
+  }
+
+  &__element-img {
+    display: inline-block;
+  }
+  &__element-name {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 122%;
+  }
+}

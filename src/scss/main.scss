@@ -35,6 +35,12 @@ body {
   font-size: 40px;
   line-height: 120%;
   color: #000000;
+  &--light {
+    color: #ffffff;
+  }
+  @include media(990px) {
+    font-size: 30px;
+  }
 }
 
 @import './modules/buttons.scss';
@@ -42,4 +48,6 @@ body {
 @import './modules/offline.scss';
 @import './modules/features.scss';
 @import './modules/reviews.scss';
+@import './modules/chart.scss';
 @import './modules/prices.scss';
+// @import './modules/footer.scss';
