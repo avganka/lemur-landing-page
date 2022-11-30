@@ -8,7 +8,7 @@
   "scripts": {
     "start": "parcel --open --port=8080",
     "dev": "rimraf dist && parcel build --no-optimize",
-    "build": "rimraf dist && parcel build --no-source-maps"
+    "build": "rimraf dist && parcel build --no-source-maps --public-url '.'"
   },
   "keywords": [],
   "author": "",

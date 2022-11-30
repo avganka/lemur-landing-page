@@ -1,7 +1,9 @@
 .header {
   position: relative;
-  margin-bottom: 250px;
-
+  height: 100vh;
+  @include media(580px) {
+    height: auto;
+  }
   &__decor {
     position: absolute;
     top: -315px;
