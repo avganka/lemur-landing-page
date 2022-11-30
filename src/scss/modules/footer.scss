@@ -1,0 +1,95 @@
+.footer {
+  &__wrapper {
+    padding: 150px 0;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 0px 200px 0px 0px;
+    background-color: $darkblue;
+
+    @include media(990px) {
+      border-radius: 0px 100px 0px 0px;
+      padding: 100px 0 50px;
+    }
+    @include media(580px) {
+      border-radius: 0px 50px 0px 0px;
+    }
+  }
+  &__inner {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    @include media(990px) {
+      margin-top: 33px;
+    }
+  }
+  &__contacts {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 140%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__phone,
+  &__email {
+    text-decoration: none;
+    color: #ffffff;
+    @include media(990px) {
+      font-size: 40px;
+      line-height: 125%;
+    }
+    @include media(580px) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  &__phone:hover,
+  &__email:hover {
+    text-decoration: underline;
+  }
+
+  &__copyright {
+    margin-top: 45px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  &__form {
+    width: 460px;
+    @include media(990px) {
+      width: 100%;
+    }
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  input,
+  textarea {
+    font-family: 'Montserrat';
+    font-style: normal;
+    padding-bottom: 16px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    color: $orange;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 144%;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: #ffffff;
+  }
+  textarea {
+    resize: none;
+  }
+  &__button {
+    align-self: flex-end;
+  }
+}

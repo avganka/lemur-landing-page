@@ -216,11 +216,7 @@
         </div>
       </div>
     </div>
-
-
-
   </section>
-
 
 
   <section class="prices">
@@ -252,21 +248,25 @@
 
 
   <footer class="footer">
-    <div class="section-title section-title--light">Контакты</div>
+
     <div class="footer__wrapper">
-      <div class="footer__contacts">
-        <a href="#">+38 067 572 25 00</a>
-        <a href="#">oleg@survey.lemur.ua</a>
+      <div class="container">
+        <div class="section-title section-title--light">Контакты</div>
+        <div class="footer__inner">
+          <div class="footer__contacts">
+            <a class="footer__phone" href="#">+38 067 572 25 00</a>
+            <a class="footer__email" href="#">oleg@survey.lemur.ua</a>
+          </div>
+          <form class="footer__form form" method="post">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="phone" placeholder="Ваш телефон" required>
+            <input type="text" placeholder="Ваша организация">
+            <textarea name="question" rows="3" required placeholder="Задайте ваш вопрос"></textarea>
+            <button type="submit" class="form__button button button--orange">Отправить</button>
+          </form>
+        </div>
         <div class="footer__copyright">© Lemur.ua 2022. Все права защищены</div>
       </div>
-      <form class="footer__form form">
-
-        <input type="text" placeholder="Ваше имя">
-        <input type="phone" placeholder="Ваш телефон">
-        <input type="text" placeholder="Ваша организация">
-        <textarea name="question" rows="3" placeholder="Задайте ваш вопрос"></textarea>
-        <button type="submit" class="button button--orange">Отправить</button>
-      </form>
     </div>
   </footer>
 

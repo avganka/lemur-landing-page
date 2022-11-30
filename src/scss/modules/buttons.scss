@@ -66,6 +66,12 @@
   }
 }
 .button--orange {
+  border-radius: 35px;
+  padding: 14px 49px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
   border-color: $orange;
   background-color: $orange;
   &:hover,
@@ -73,5 +79,8 @@
     color: $blue;
     background-color: #ffffff;
     border-color: #ffffff;
+  }
+  @include media(580px) {
+    font-size: 20px;
   }
 }
